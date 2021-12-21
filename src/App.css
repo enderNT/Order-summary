@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 55%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  border-radius: 12px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.IlustrationHero {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+  margin: 15%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+h4 {
+  color: hsl(223, 47%, 23%);
+}
+
+.Change {
+  color: hsl(253, 90%, 73%);
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.PayOut {
+  background-color: hsl(253, 90%, 73%);
   color: white;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  cursor: pointer;
+  width: 80%;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.Cancel {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Info {
+  display: flex;
+  background-color: hsl(228, 33%, 94%);
+  width: 80%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.Plan {
+  margin-left: 8%;
+}
+
+.Change {
+  margin-left: 45%;
+}
+
+.Price {
+  margin-left: 0.1%;
+}
+
+@media (min-width: 325px) and (max-width: 720px) {
+  body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-mobile.svg);
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    width: 80%;
+    margin-top: 25.5%;
+    margin-bottom: 25.5%;
+    margin-left: 10%;
+    border-radius: 12px;
+  }
+
+  .IlustrationHero {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .IconMusic {
+    width: 99%;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 60%;
+  }
+
+  .Info {
+    display: flex;
+    background-color: hsl(228, 33%, 94%);
+    width: 95%;
+    padding: auto;
+  }
+
+  .Plan {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .Change {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  .Price {
+    margin-left: 0.1%;
   }
 }
